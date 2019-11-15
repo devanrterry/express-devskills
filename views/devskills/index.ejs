@@ -10,12 +10,13 @@
     <h1>My Dev Skills</h1>
     <ul>
       <% devskills.forEach(function(s, idx) { %>
-        <li>
+        <li>  
           <a href="/devskills/<%= idx %>"><%= s.devskill %></a>
              - 
            <%= s.yes ? 'yes' : 'no' %> 
         </li>
       <% }); %>
     </ul>
+    <a href="/devskills/new">Add Skill</a>
   </body>
 </html>

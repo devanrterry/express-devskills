@@ -8,9 +8,19 @@ const devskills = [
   
   module.exports = {
     getAll,
-    getOne
+    getOne,
+    create,
+    deleteOne
+  };
+
+  function deleteOne(id){
+    devskills.splice(id, 1);
   };
   
+  function create(devskill){
+    devskills.push(devskill);
+  };
+
   function getAll() {
     return devskills;
   };

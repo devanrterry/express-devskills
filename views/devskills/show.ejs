@@ -13,5 +13,9 @@
         <h1>Dev Skills #<%= devskillNum %></h1>
         <h3><%= devskill.devskill %></h3>
         <h3>Complete: <%= devskill.yes ? 'Yes' : 'No' %></h3>
+        <form action="/devskills/<%= idx %>?_method=DELETE"
+          class="delete-form" method="POST">
+          <button type="submit">Delete Skill</button>
+        </form>
   </body>
 </html>
